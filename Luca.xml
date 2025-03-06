@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE products [<!ELEMENT products (product+)>
+
+<!ELEMENT product (name, price, description, img, audio)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+    src CDATA #REQUIRED
+    alt CDATA #REQUIRED>
+
+<!ELEMENT audio (source)> 
+<!ATTLIST audio
+    controls CDATA #IMPLIED>
+
+<!ELEMENT source EMPTY>
+<!ATTLIST source
+    src CDATA #REQUIRED
+    type CDATA #REQUIRED>
+]>
+
+<products>
+  <product>
+    <name>Sourdough White</name>
+    <price>$7.00</price>
+    <description>Our standard sourdough</description>
+    <img src="bread.gif" alt="Sourdough White"/>
+    <audio controls="controls">
+      <source src="bread-sound.mp3" type="audio/mp3"/>
+    </audio>
+  </product>
+
+  <product>
+    <name>Sourdough Rye</name>
+    <price>$8.00</price>
+    <description>Sourdough created with 50% rye flour</description>
+    <img src="bread.gif" alt="Sourdough Rye"/>
+    <audio controls="controls">
+      <source src="bread-sound.mp3" type="audio/mp3"/>
+    </audio>
+  </product>
+
+  <product>
+    <name>Sourdough Spelt</name>
+    <price>$9.00</price>
+    <description>Sourdough created with 100% spelt flour.</description>
+    <img src="bread.gif" alt="Sourdough Spelt"/>
+    <audio controls="controls">
+      <source src="bread-sound.mp3" type="audio/mp3"/>
+    </audio>
+  </product>
+
+  <product>
+    <name>Sourdough Seeded</name>
+    <price>$9.50</price>
+    <description>Sourdough including a mixture of yummy seeds.</description>
+    <img src="bread.gif" alt="Sourdough Seeded"/>
+    <audio controls="controls">
+      <source src="bread-sound.mp3" type="audio/mp3"/>
+    </audio>
+  </product>
+</products>
+

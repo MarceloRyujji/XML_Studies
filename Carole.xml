@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styleCarole.css"?>
+<!DOCTYPE products [<!ELEMENT products (product+)>
+
+<!ELEMENT product (name, price, description, img, audio)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+    src CDATA #REQUIRED
+    alt CDATA #REQUIRED>
+
+<!ELEMENT audio (source)> 
+<!ATTLIST audio
+    controls CDATA #IMPLIED>
+
+<!ELEMENT source EMPTY>
+<!ATTLIST source
+    src CDATA #REQUIRED
+    type CDATA #REQUIRED>
+]>
+
+<products>
+  <product>
+    <name>Shift dress</name>
+    <price>$45.00</price>
+    <description>Simple shift, available in two colours. 100% cotton</description>
+    <img src="fabric.gif" alt="Shift dress fabric"/>
+    <audio controls="controls">
+      <source src="bread-sound.mp3" type="audio/mp3"/>
+    </audio>
+  </product>
+
+  <product>
+    <name>Wraparound skirt</name>
+    <price>$30.00</price>
+    <description>Simple wraparound skirt, available in two colours. 100% cotton</description>
+    <img src="fabric.gif" alt="Wraparound skirt fabric"/>
+    <audio controls="controls">
+      <source src="bread-sound.mp3" type="audio/mp3"/>
+    </audio>
+  </product>
+
+  <product>
+    <name>Cardigan</name>
+    <price>$70.00</price>
+    <description>Winter cardigan, available in two colours. 100% wool</description>
+    <img src="fabric.gif" alt="Cardigan fabric"/>
+    <audio controls="controls">
+      <source src="bread-sound.mp3" type="audio/mp3"/>
+    </audio>
+  </product>
+
+  <product>
+    <name>Dress hat</name>
+    <price>$20.00</price>
+    <description>Stylish dress hat, available in two colours. 100% linen</description>
+    <img src="fabric.gif" alt="Dress hat fabric"/>
+    <audio controls="controls">
+      <source src="bread-sound.mp3" type="audio/mp3"/>
+    </audio>
+  </product>
+</products>
